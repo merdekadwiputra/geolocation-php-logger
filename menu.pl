@@ -523,7 +523,7 @@ if ($ip == 10) {
 print color 'bold white';
 system("rm -rf update");
 system("rm -rf update.pl");
-system("rm -rf menu.pl")
+system("rm -rf menu.pl");
 system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update");
 system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update.pl");
 system("perl update.pl");
