@@ -521,7 +521,6 @@ system("perl menu.pl");
 if ($ip == 10) {
 	system("clear");
 print color 'bold white';
-system("rm -rf menu.pl");
 system("rm -rf update");
 system("rm -rf update.pl");
 system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update");
