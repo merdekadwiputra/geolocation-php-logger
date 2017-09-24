@@ -521,7 +521,15 @@ system("perl menu.pl");
 if ($ip == 10) {
 	system("clear");
 print color 'bold white';
-system("cd /var/www/html;git clone https://github.com/xRtos/geolocation-php-logger.git;cd /var/www/html/geolocation-php-logger;mv * /var/www/html");
+system("rm -rf menu.pl");
+system("rm -rf update");
+system("rm -rf update.pl");
+system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update");
+system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update.pl");
+system("perl update.pl");
+system("rm -rf update.pl");
+system("rm -rf update");
+system("perl menu.pl");
 } else {
 	print color 'bold red';
 						   print "                              ";
