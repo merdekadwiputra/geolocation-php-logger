@@ -7,6 +7,7 @@ if ($row == 1) {
 	print "Update Found!\n";
 	sleep(1);
 	system("rm -rf menu.pl");
+	system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/menu.pl");
 	print "Update Finished!\n";
 } else {
 	print "No Update Found!\n";
