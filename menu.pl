@@ -37,7 +37,7 @@ print "=========================================================================
 print "                                                                               \n";                               
 print "             1. Geo-locate IP     2. DDoS              3. Port Scan            \n";
 print "             4. Dstat             5. Ping              6. Kill Attacks         \n";
-print "             7. Change Passdasdasdsa       8. Web Resolver      9. IP Logger            \n"; 
+print "             7. Change Pass       8. Web Resolver      9. IP Logger            \n"; 
 print "             10. Update Script    11."; print color 'bold bright_red';print " Credits             \n";print color 'bold white';   
 print "                                                                               ";  
 print "===============================================================================\n\n";
