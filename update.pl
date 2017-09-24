@@ -11,12 +11,8 @@ if ($row == 1) {
 	print color 'bold white';
 	print "Update Found!\n";
 	sleep(1);
-	system("rm -rf geolocation-php-logger");
-	system("git clone https://github.com/xRtos/geolocation-php-logger.git");
 	system("rm -rf menu.pl");
-	system("cd geolocation-php-logger; rm -rf index.php;rm -rf visitors.html;rm -rf update;mv menu.pl ../");
-	system("rm -rf geolocation-php-logger");
-	system("clear");
+	system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/menu.pl");
 	print "Update Finished!\n";
 } else {
 	print "No Update Found!\n";
