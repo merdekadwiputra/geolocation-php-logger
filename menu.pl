@@ -542,7 +542,6 @@ system("rm -rf update.pl");
 system("rm -rf menu.pl");
 system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update");
 system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update.pl");
-system("rm -rf menu.pl");
 system("perl update.pl");
 system("rm -rf update.pl");
 system("rm -rf update");
