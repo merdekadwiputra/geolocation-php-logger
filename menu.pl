@@ -1,6 +1,20 @@
 #!/usr/bin/perl
 #!/usr/bin/env bash
 
+#                           Made By Rtos
+#           Dont fucking take credit for my shit. Thanks :/
+#              ___________________          _-_
+#              \==============_=_/ ____.---'---`---.____
+#                          \_ \    \----._________.----/
+#                            \ \   /  /    `-_-'
+#                        __,--`.`-'..'-_
+#                       /____          ||
+#                            `--.____,-'
+#                          Contact Me @:
+#                        Skype: live:xrtos
+#                         Instagram:xrtos 
+#
+
 use Socket;
 use Term::ANSIColor;
 use WWW::Mechanize;
@@ -43,7 +57,6 @@ print "                                                                         
 print "===============================================================================\n\n";
 print color 'bold bright_red';
 print "                             [";print color 'bold bright_green';print "Traced";print color 'bold bright_red';print "]";print color 'bold white'; print " ~ Enter A #: "; print color 'bold bright_green'; $ip = <>;
-
 if ($ip == 1) {
 	system("echo -ne '\e[8;29;79t'");
 system("clear");
