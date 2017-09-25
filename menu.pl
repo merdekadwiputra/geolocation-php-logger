@@ -30,19 +30,19 @@ print color 'bold bright_green';print "                  ░      ░▒ ░ ▒
 print color 'bold bright_green';print color 'bold bright_green';print "                ░        ░░   ░   ░   ▒   ░";print color 'bold bright_red';print "           ░    ░ ░  ░ \n";
 print color 'bold bright_green';print "                          ░           ░  ░░ ░";print color 'bold bright_red';print "         ░  ░   ░    \n";
 print color 'bold bright_green';print "                                          ░";print color 'bold bright_red';print "                ░      \n";
-print color 'bold yellow';
-print "                                [W3lcome Fucker]";print color 'bold white';
+print color 'bold bright_red';
+print "                                [Welcome Skidy]";print color 'bold white';
 print "\n\n";
 print "===============================================================================\n";
 print "                                                                               \n";                               
 print "             1. Geo-locate IP     2. DDoS              3. Port Scan            \n";
 print "             4. Dstat             5. Ping              6. Kill Attacks         \n";
 print "             7. Change Pass       8. Web Resolver      9. IP Logger            \n"; 
-print "             10. Update Script    11."; print color 'bold bright_red';print " Credits             \n";print color 'bold white';   
+print "             10. Update Script    11. Coming soon      12."; print color 'bold bright_red';print " Credits             \n";print color 'bold white';   
 print "                                                                               ";  
 print "===============================================================================\n\n";
-
-print "                                 #: "; print color 'bold bright_red'; $ip = <>;
+print color 'bold bright_red';
+print "                             [";print color 'bold bright_green';print "Traced";print color 'bold bright_red';print "]";print color 'bold white'; print " ~ Enter A #: "; print color 'bold bright_green'; $ip = <>;
 
 if ($ip == 1) {
 	system("echo -ne '\e[8;29;79t'");
