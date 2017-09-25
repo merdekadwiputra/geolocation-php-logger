@@ -9,6 +9,7 @@ if ($row == 1) {
 	system("rm -rf menu.pl");
 	system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/menu.pl");
 	print "Update Finished!\n";
+	system("clear");
 } else {
 	print "No Update Found!\n";
 sleep(1);
