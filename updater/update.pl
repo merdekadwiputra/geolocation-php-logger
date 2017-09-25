@@ -12,6 +12,9 @@ if ($row == 1) {
 	system("clear");
 } else {
 	system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/current/menu.pl");
+	system("rm -rf update");
+	system("rm -rf update.pl");
+	system("clear");
 	print "No Update Found! Restored to current version!\n";
 sleep(1);
 system("perl menu.pl");	
