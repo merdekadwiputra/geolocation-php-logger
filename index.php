@@ -24,7 +24,7 @@ $zip = $obj->zip;
 $dateTime = date('Y/m/d G:i:s');
 $file = "visitors.html";
 $file = fopen($file, "a");
-$data = "\e[0;31mUser IP :\e[1;37m $ip \n\n\e[0;31mORG :\e[1;37m $org\n\n\e[0;31mISP :\e[1;37m $isp\n\n\e[0;31mCountry :\e[1;37m $country - $countryCode\n\n\e[0;31mRegion :\e[1;37m $regionName($region)\n\n\e[0;31mCity :\e[1;37m $city\n\n\e[0;31mTimezone :\e[1;37m $timezone\n\n\e[0;31mZip Code :\e[1;37m $zip\n\n\e[0;31mCoordinates :\e[1;37m $lat, $lon\n\n\e[0;31mTime :\e[1;37m $dateTime\n\n\e[0;31mBrowser :\e[1;37m $browser";
+$data = "\e[0;31mUser IP :\e[1;37m $ip \n\n\e[0;31mORG :\e[1;37m $org\n\n\e[0;31mISP :\e[1;37m $isp\n\n\e[0;31mCountry :\e[1;37m $country - $countryCode\n\n\e[0;31mRegion :\e[1;37m $regionName($region)\n\n\e[0;31mCity :\e[1;37m $city\n\n\e[0;31mTimezone :\e[1;37m $timezone\n\n\e[0;31mZip Code :\e[1;37m $zip\n\n\e[0;31mCoordinates :\e[1;37m $lat, $lon\n\n\e[0;31mTime :\e[1;37m $dateTime\n\n\e[0;31mBrowser :\e[1;37m $browser\n";
 $lines = "\n--------------------------\n";
 $line = "--------------------------";
 $text = "\n      Most Recent Log: ";
@@ -32,6 +32,7 @@ fwrite($file, $text);
 fwrite($file, $lines);
 fwrite($file, $data);
 fclose($file);
+fwrite($file, $line);
 ?>
 <?php
 $profpic = "troll.gif";
