@@ -32,5 +32,24 @@ fwrite($file, $lines);
 fwrite($file, $data);
 fwrite($file, $line);
 fclose($file);
-echo "<center><h1>Hi :)</h1>";
 ?>
+<?php
+$profpic = "troll.gif";
+?>
+
+<html>
+<head>
+<style type="text/css">
+
+body {
+background-image: url('<?php echo $profpic;?>');
+}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>its just a prank</title>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><h1>Get trolled NERD</h1>
+</head>
+<body>
+</body>
+</html>
