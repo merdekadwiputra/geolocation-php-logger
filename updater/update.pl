@@ -11,7 +11,8 @@ if ($row == 1) {
 	print "Update Finished!\n";
 	system("clear");
 } else {
-	print "No Update Found!\n";
+	system("wget https://raw.githubusercontent.com/xRtos/geolocation-php-logger/master/current/menu.pl");
+	print "No Update Found! Restored to current version!\n";
 sleep(1);
 system("perl menu.pl");	
 }
